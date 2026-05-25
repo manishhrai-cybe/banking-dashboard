@@ -393,7 +393,11 @@ try:
             hovertemplate='%{x}<br>%{y} flagged<extra></extra>',
         ))
         fig3.update_layout(
-            **CHART_LAYOUT, height=200,
+            paper_bgcolor='rgba(0,0,0,0)',
+            plot_bgcolor='rgba(0,0,0,0)',
+            font=dict(family='Inter', color='#94a3b8', size=11),
+            margin=dict(t=20, b=20, l=10, r=10),
+            height=200,
             showlegend=True,
             legend=dict(orientation='h', y=1.15, font=dict(size=10)),
             xaxis=dict(gridcolor='rgba(255,255,255,0.03)'),
@@ -481,7 +485,11 @@ with col_chart:
         fig4.update_traces(textposition='top center', marker_size=12,
                            textfont=dict(size=10, color='#94a3b8'))
         fig4.update_layout(
-            **CHART_LAYOUT, height=300,
+            paper_bgcolor='rgba(0,0,0,0)',
+            plot_bgcolor='rgba(0,0,0,0)',
+            font=dict(family='Inter', color='#94a3b8', size=11),
+            margin=dict(t=20, b=20, l=10, r=10),
+            height=300,
             showlegend=True,
             legend=dict(orientation='h', y=1.1, font=dict(size=10)),
             xaxis=dict(gridcolor='rgba(255,255,255,0.04)', title='Credit Score'),
